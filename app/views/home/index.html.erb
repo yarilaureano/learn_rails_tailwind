@@ -1,0 +1,253 @@
+<body class="m-0 font-sans text-base antialiased font-normal dark:bg-orange-900 leading-default bg-sopris text-orange-500">
+    <div class="absolute w-full bg-yari min-h-75"></div>
+    <!-- sidenav  -->
+    <aside class="fixed inset-y-0 flex-wrap items-center justify-between block w-full p-0 my-4 overflow-y-auto antialiased transition-transform duration-200 -translate-x-full bg-white border-0 shadow-xl dark:shadow-none dark:bg-orange-800 max-w-64 ease-nav-brand z-990 xl:ml-6 rounded-2xl xl:left-0 xl:translate-x-0" aria-expanded="false">
+      <div class="h-22">
+        <i class="absolute top-0 right-0 p-4 opacity-50 cursor-pointer fas fa-times dark:text-white text-orange-400 xl:hidden" sidenav-close></i>
+        <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap dark:text-white text-orange-700" href="https://sopristec.com/" target="_blank">
+          <%= image_tag "logo_sopris"%>  
+        </a>
+      </div>
+
+      <hr class="h-px mt-0 bg-transparent bg-gradient-to-r from-transparent via-black/40 to-transparent dark:bg-gradient-to-r dark:from-transparent dark:via-white dark:to-transparent" />
+
+      <div class="items-center block w-auto max-h-screen overflow-auto h-sidenav grow basis-full">
+        <ul class="flex flex-col pl-0 mb-0">
+          <li class="mt-0.5 w-full">
+            <a class="py-2.7 bg-orange-500/13 dark:text-white dark:opacity-80 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap rounded-lg px-4 font-semibold text-orange-700 transition-colors" href="./index.html">
+              <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                <i class="relative top-0 text-sm leading-normal text-slate-500 ni ni-tv-2"></i>
+              </div>
+              <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">Home</span>
+            </a>
+          </li>
+
+          <li class="w-full mt-4">
+            <h6 class="pl-6 ml-2 text-xs font-bold leading-tight uppercase dark:text-white opacity-60">Customers</h6>
+          </li>
+
+          <li class="mt-0.5 w-full">
+            <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/coppel.html">
+              <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                <i class="relative top-0 text-sm leading-normal text-slate-700 ni ni-single-02"></i>
+              </div>
+              <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">COPPEL</span>
+            </a>
+          </li>
+
+          <li class="mt-0.5 w-full">
+            <a class=" dark:text-white dark:opacity-80 py-2.7 text-sm ease-nav-brand my-0 mx-2 flex items-center whitespace-nowrap px-4 transition-colors" href="./pages/arca.html">
+              <div class="mr-2 flex h-8 w-8 items-center justify-center rounded-lg bg-center stroke-0 text-center xl:p-2.5">
+                <i class="relative top-0 text-sm leading-normal text-slate-700 ni ni-single-02"></i>
+              </div>
+              <span class="ml-1 duration-300 opacity-100 pointer-events-none ease">ARCA</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mx-4">
+        <!-- load phantom colors for card after: -->
+        
+        <div class="relative flex flex-col min-w-0 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border" sidenav-card>
+          
+          <div class="flex-auto w-full p-4 pt-0 text-center">
+            <div class="transition-all duration-200 ease-nav-brand">
+            </div>
+          </div>
+        
+    </aside>
+    <!-- end sidenav -->
+
+    <main class="relative h-full max-h-screen transition-all duration-200 ease-in-out xl:ml-68 rounded-xl">
+      <!-- Navbar -->
+      <nav class="relative flex flex-wrap items-center justify-between px-0 py-2 mx-6 transition-all ease-in shadow-none duration-250 rounded-2xl lg:flex-nowrap lg:justify-start" navbar-main navbar-scroll="false">
+        <div class="flex items-center justify-between w-full px-4 py-1 mx-auto flex-wrap-inherit">
+          <nav>
+            <!-- breadcrumb -->
+            <ol class="flex flex-wrap pt-1 mr-12 bg-transparent rounded-lg sm:mr-16">
+              <li class="text-sm leading-normal">
+                <a class="text-white opacity-50" href="javascript:;">Pages</a>
+              </li>
+              <li class="text-sm pl-2 capitalize leading-normal text-white before:float-left before:pr-2 before:text-white before:content-['/']" aria-current="page">Home</li>
+            </ol>
+            <h6 class="mb-0 font-bold text-white capitalize">Home</h6>
+          </nav>
+
+          <div class="flex items-center mt-2 grow sm:mt-0 sm:mr-6 md:mr-0 lg:flex lg:basis-auto">
+            <div class="flex items-center md:ml-auto md:pr-4">
+              <div class="relative flex flex-wrap items-stretch w-full transition-all rounded-lg ease">
+                <span class="text-sm ease leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                  <i class="fas fa-search"></i>
+                </span>
+                <input type="text" class="pl-9 text-sm focus:shadow-primary-outline ease w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 dark:bg-slate-850 dark:text-white bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-blue-500 focus:outline-none focus:transition-shadow" placeholder="Type here..." />
+              </div>
+            </div>
+            <ul class="flex flex-row justify-end pl-0 mb-0 list-none md-max:w-full">
+              <!-- online builder btn  -->
+              <!-- <li class="flex items-center">
+                <a class="inline-block px-8 py-2 mb-0 mr-4 text-xs font-bold text-center text-blue-500 uppercase align-middle transition-all ease-in bg-transparent border border-blue-500 border-solid rounded-lg shadow-none cursor-pointer leading-pro hover:-translate-y-px active:shadow-xs hover:border-blue-500 active:bg-blue-500 active:hover:text-blue-500 hover:text-blue-500 tracking-tight-rem hover:bg-transparent hover:opacity-75 hover:shadow-none active:text-white active:hover:bg-transparent" target="_blank" href="https://www.creative-tim.com/builder/soft-ui?ref=navbar-dashboard&amp;_ga=2.76518741.1192788655.1647724933-1242940210.1644448053">Online Builder</a>
+              </li> -->
+              
+              <li class="flex items-center pl-4 xl:hidden">
+                <a href="javascript:;" class="block p-0 text-sm text-white transition-all ease-nav-brand" sidenav-trigger>
+                  <div class="w-4.5 overflow-hidden">
+                    <i class="ease mb-0.75 relative block h-0.5 rounded-sm bg-white transition-all"></i>
+                    <i class="ease mb-0.75 relative block h-0.5 rounded-sm bg-white transition-all"></i>
+                    <i class="ease relative block h-0.5 rounded-sm bg-white transition-all"></i>
+                  </div>
+                </a>
+              </li>
+              <li class="flex items-center px-4">
+                <a href="javascript:;" class="p-0 text-sm text-white transition-all ease-nav-brand">
+                  <i fixed-plugin-button-nav class="cursor-pointer fa fa-cog"></i>
+                  <!-- fixed-plugin-button-nav  -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- end Navbar -->
+
+      <!-- cards -->
+      <div class="w-full px-6 py-6 mx-auto">
+        <!-- row 1 -->
+        <div class="flex flex-wrap -mx-10">
+          <!-- card1 -->
+          <div class="w-full max-w-full px-3 mb-10 sm:w-4/8 sm:flex-none xl:mb-0 xl:w-4/8">
+            <div class="relative flex flex-col min-w-10 break-words bg-white shadow-xl dark:bg-slate-850 dark:shadow-dark-xl rounded-2xl bg-clip-border">
+              <div class="flex-auto p-6">
+                <div class="flex flex-row -mx-2">
+                  <div class="flex-none w-4/8 max-w-full px-20">
+                    <div>
+                      <p class="mb-3 font-sans text-xl font-bold leading-default dark:text-white dark:opacity-60">Smart Incidents Manager</p>
+                      <h5 class="sm-0 font-bold dark:text-white">ADMIN PANEL</h5>
+                      <p class="mb-0 dark:text-white dark:opacity-60">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+              <!-- Control buttons -->
+              <button btn-next class="absolute z-10 w-10 h-10 p-2 text-lg text-white border-none opacity-50 cursor-pointer hover:opacity-100 far fa-chevron-right active:scale-110 top-6 right-4"></button>
+              <button btn-prev class="absolute z-10 w-10 h-10 p-2 text-lg text-white border-none opacity-50 cursor-pointer hover:opacity-100 far fa-chevron-left active:scale-110 top-6 right-16"></button>
+            </div>
+          </div>
+        </div>
+          <div class="w-full max-w-full px-8 mt-0 lg:w-10/12 lg:flex-none">
+            <div class="border-black/12.5 shadow-xl dark:bg-slate-850 dark:shadow-dark-xl relative flex min-w-0 flex-col break-words rounded-2xl border-0 border-solid bg-white bg-clip-border">
+              <div class="p-4 pb-0 rounded-t-4">
+                <h6 class="mb-0 dark:text-white">Customers</h6>
+              </div>
+              <div class="flex-auto p-4">
+                <ul class="flex flex-col pl-0 mb-0 rounded-lg">
+                  <li class="relative flex justify-between py-2 pr-4 mb-2 border-0 rounded-t-lg rounded-xl text-inherit">
+                    <div class="flex items-center">
+                      <!-- FAQ Accordion -->
+                <section id="faq-accordion">
+                  <!-- Main Container -->
+                  <div class="container mx-auto px-6 mb-32">
+                    <!-- Accordion Container -->
+                    <div class="max-w-2xl m-8 mx-auto overflow-hidden">
+                      <!-- Tab 1 -->
+                      <div class="py-1 border-b outline-none group" tabindex="1">
+                        <!-- Tab Flex Container -->
+                        <div
+                          class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+                        >
+                          <!-- Tab Title -->
+                          <div
+                            class="transition duration-500 ease group-hover:text-red-500"
+                          >
+                            COPPEL
+                          </div>
+                          <!-- Arrow -->
+                          <div
+                          <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap dark:text-white text-orange-700" href="https://www.coppel.com/acerca-de-nosotros.com" target="_blank">
+                            <img src="./assets/img/Coppel_logo.png" class="inline h-full max-w-full transition-all duration-200 dark:hidden ease-nav-brand max-h-8" alt="main_logo" />
+                          </a> 
+                          </div>
+                        </div>
+
+                        <!-- Tab Inner Content -->
+                        <div
+                          class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+                        >
+                          <p class="py-2 text-justify text-gray-800">
+                            Coppel is a Mexican company based in the city of Culiacán , Sinaloa , Mexico ,
+                            which was founded in 1941 and also has branches in Argentina , with sales through the granting of credits with few requirements,
+                            and free deliveries.
+                          </p>
+                        </div>
+                      </div>
+                       <!-- Tab 1 -->
+                       <div class="py-1 border-b outline-none group" tabindex="1">
+                        <!-- Tab Flex Container -->
+                        <div
+                          class="flex items-center justify-between py-3 text-gray-500 transition duration-500 cursor-pointer group ease"
+                        >
+                          <!-- Tab Title -->
+                          <div
+                            class="transition duration-500 ease group-hover:text-red-500"
+                          >
+                            ARCA
+                          </div>
+                          <!-- Arrow -->
+                          <div
+                          <a class="block px-8 py-6 m-0 text-sm whitespace-nowrap dark:text-white text-orange-700" href="https://www.arcacontal.com/" target="_blank">
+                            <%= image_tag"Arca_Continental_logo.svg.png"%> class="inline h-full max-w-full transition-all duration-200 dark:hidden ease-nav-brand max-h-8" alt="main_logo" />
+                          </a>
+                          </div>
+                        </div>
+
+                        <!-- Tab Inner Content -->
+                        <div
+                          class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease"
+                        >
+                          <p class="py-2 text-justify text-gray-800">
+                            Arca Continental is a Mexican multinational company that produces, distributes, and markets beverages under The Coca-Cola Company brand,
+                            as well as snacks under the Bokados brand in Mexico, Inalecsa in Ecuador, and Wise and Deep River in the United States.
+                            Arca Continental is the second-largest Coca-Cola bottler in Latin America.
+                            Through its Coca-Cola franchise, the company serves more than 123 million people in the Northern and Western regions of Mexico,
+                            as well as in Ecuador, Peru, in the Northern region of Argentina, and in the Southwestern United States.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cards -->
+    </main>
+    <div fixed-plugin>
+      <a fixed-plugin-button class="fixed px-4 py-2 text-xl bg-white shadow-lg cursor-pointer bottom-8 right-8 z-990 rounded-circle text-slate-700">
+        <i class="py-2 pointer-events-none fa fa-cog"> </i>
+      </a>
+      <!-- -right-90 in loc de 0-->
+      <div fixed-plugin-card class="z-sticky backdrop-blur-2xl backdrop-saturate-200 dark:bg-slate-850/80 shadow-3xl w-90 ease -right-90 fixed top-0 left-auto flex h-full min-w-0 flex-col break-words rounded-none border-0 bg-white/80 bg-clip-border px-2.5 duration-200">
+        <div class="px-6 pt-4 pb-0 mb-0 border-b-0 rounded-t-2xl">
+          <div class="float-right mt-6">
+            <button fixed-plugin-close-button class="inline-block p-0 mb-4 text-sm font-bold leading-normal text-center uppercase align-middle transition-all ease-in bg-transparent border-0 rounded-lg shadow-none cursor-pointer hover:-translate-y-px tracking-tight-rem bg-150 bg-x-25 active:opacity-85 dark:text-white text-slate-700">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+          <!-- End Toggle Button -->
+</body>      
+
+
+
+
+
+
+
+
+
