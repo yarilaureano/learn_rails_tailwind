@@ -6,22 +6,31 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "sim-customer-config" %>
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <!-- Fonts and icons     -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" /> 
     <!-- Font Awesome Icons -->
-    <!-- <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <!-- Nucleo Icons -->
+    <%= stylesheet_link_tag "nucleo-icons" %>
+    <%= stylesheet_link_tag "nucleo-svg" %>
     <!-- Main Styling -->
+    <%= stylesheet_link_tag "sim-customer-config" %>
 
     
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <!--<main class="container mx-auto mt-28 px-5 flex"-->
       <%= yield %>
     </main>
   </body>
+  <!-- plugin for charts  -->
+  <script src="./assets/js/plugins/chartjs.min.js" async></script>
+  <!-- plugin for scrollbar  -->
+  <script src="./assets/js/plugins/perfect-scrollbar.min.js" async></script>
+  <!-- main script file  -->
+  <script src="./assets/js/argon-dashboard-tailwind.js?v=1.0.1" async></script>
 </html>
