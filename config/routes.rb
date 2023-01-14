@@ -7,4 +7,9 @@ Rails.application.routes.draw do
 
   get 'home/coppel'
   get 'home/arca'
+  get 'coppel/arca'
+  get 'coppel/home'
+  get 'arca/coppel'
+  get 'arca/home'
+  get 'home/index'
 end
